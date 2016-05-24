@@ -42,4 +42,6 @@ $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/qca_cld; \
     ln -sf /persist/wlan_mac.bin \
 	    $(TARGET_OUT_ETC)/firmware/wlan/qca_cld/wlan_mac.bin)
 
+include device/xiaomi/gemini/tftp.mk
+
 endif
